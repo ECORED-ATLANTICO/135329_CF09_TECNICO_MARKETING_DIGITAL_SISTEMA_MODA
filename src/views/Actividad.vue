@@ -2,12 +2,10 @@
   .curso-main-container.pb-3
     BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
-      // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
       #Actividad                
       <ActividadController :cuestionario="cuestionario"/>
   
-  </template>
+</template>
 
 <script>
 import ActividadController from '@ecored-sena/boulder-kit/plugin/components/actividad/ActividadController.vue'
@@ -19,486 +17,683 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Comunicación gráfica',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> verificar la comprensión de comunicación visual, diseño, fotografía, producción audiovisual, edición digital e identidad de marca mediante preguntas de selección múltiple con única respuesta.',
       barajarPreguntas: true,
-      titulo_aprobado: '¡BUEN TRABAJO!',
+      titulo_aprobado: '¡EXCELENTE!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
+      mensaje_aprobado:
+        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al sistema moda. Revise la retroalimentación para fortalecer su comprensión.',
+      mensaje_reprobado:
+        'Revise los temas asociados con sus respuestas incorrectas y vuelva a intentarlo. Puede repetir la actividad para fortalecer su comprensión de la comunicación gráfica.',
+      mensaje_final_aprobado:
+        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al sistema moda. Revise la retroalimentación para fortalecer su comprensión.',
+      mensaje_final_reprobado:
+        'Revise los temas asociados con sus respuestas incorrectas y vuelva a intentarlo. Puede repetir la actividad para fortalecer su comprensión de la comunicación gráfica.',
       preguntas: [
         {
           id: 1,
           texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+            'Una publicación genera preguntas sobre las tallas. ¿Qué elemento del proceso comunicativo representan esas respuestas?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Emisor.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+              texto: 'Retroalimentación.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'Referente.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: 'Canal.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_correcto:
+            'Identificó la retroalimentación como la respuesta que permite conocer cómo se recibió el mensaje.',
           mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+            'Revise la retroalimentación: las consultas del público aportan información para ajustar el mensaje.',
         },
         {
           id: 2,
           texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            'Una empresa explica materiales y cuidados mediante palabras, fotografías y símbolos. ¿Qué elemento reúne esos signos?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Canal.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'Contexto.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
-              esCorrecta: true,
+              texto: 'Receptor.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
+              texto: 'Código.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Reconoció el código como el conjunto de signos utilizado para expresar el mensaje.',
+          mensaje_incorrecto:
+            'Distinga los signos utilizados del medio de difusión: palabras, fotografías y símbolos forman parte del código.',
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto:
+            'Una empresa quiere que el público consulte las medidas de una prenda. ¿Qué llamado corresponde con ese propósito?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
-              esCorrecta: false,
+              texto: 'Consulte las medidas de esta prenda.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Conozca la historia de nuestro edificio.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
+              texto: 'Observe el paisaje de la campaña.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Visite una sección sin información del producto.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Relacionó la acción esperada con un mensaje que dirige a información pertinente.',
+          mensaje_incorrecto:
+            'El llamado debe orientar a la acción definida y conducir a información relacionada con ella.',
         },
         {
           id: 4,
           texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+            '¿Qué decisión establece una jerarquía clara entre el título y la descripción de un producto?',
+          imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Aplicar el mismo tamaño a todos los elementos.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Superponer el título sobre la descripción.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
+              texto: 'Diferenciar su tamaño y peso tipográfico.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Distribuir los textos sin un orden definido.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Reconoció que el tamaño y el peso tipográfico permiten diferenciar niveles de información.',
+          mensaje_incorrecto:
+            'Revise la jerarquía visual: debe distinguir la información principal de sus detalles.',
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto:
+            'Una ficha coloca nombre y precio junto a su fotografía, separados de otros productos. ¿Qué principio favorece esa relación?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+              texto: 'Cierre.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Proximidad.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto: 'Simetría.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Dirección común.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Identificó la proximidad: los elementos cercanos tienden a percibirse como relacionados.',
+          mensaje_incorrecto:
+            'Observe la distancia entre los elementos: acercar información al producto facilita reconocer su relación.',
         },
         {
           id: 6,
           texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            '¿Qué modelo de color se utiliza para representar imágenes mediante luz roja, verde y azul en las pantallas?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
-              esCorrecta: false,
-            },
-            {
-              id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
+              texto: 'RGB.',
               esCorrecta: true,
             },
             {
+              id: 'b',
+              texto: 'CMYK.',
+              esCorrecta: false,
+            },
+            {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
+              texto: 'Escala de grises.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'Blanco y negro.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Reconoció RGB como el modelo que combina luz roja, verde y azul.',
+          mensaje_incorrecto:
+            'Distinga pantalla e impresión: RGB combina luz; CMYK se relaciona con tintas.',
         },
         {
           id: 7,
           texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+            'Una descripción resulta difícil de leer en un teléfono. ¿Qué ajuste debe priorizarse?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'Añadir sombras a todas las letras.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
+              texto: 'Reducir el espacio entre todas las palabras.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+              texto: 'Usar una fuente decorativa más compleja.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
-              esCorrecta: false,
+              texto: 'Revisar tamaño, contraste e interlineado.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Relacionó la facilidad de lectura con las condiciones de presentación del texto.',
+          mensaje_incorrecto:
+            'Compruebe tamaño, contraste y separación antes de añadir efectos tipográficos.',
         },
         {
           id: 8,
           texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+            'Una imagen muestra una camisa azul sobre una silla. ¿Qué enunciado corresponde a una lectura denotativa?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'La persona propietaria prefiere la vida urbana.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'La escena demuestra una personalidad independiente.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
+              texto: 'Se observa una camisa azul sobre una silla.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'La prenda representa el éxito de quien la usa.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Diferenció la descripción de elementos visibles de las interpretaciones sobre su significado.',
+          mensaje_incorrecto:
+            'La denotación describe lo observable; las motivaciones o asociaciones requieren información adicional.',
         },
         {
           id: 9,
           texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'Una fotografía del bolso completo no permite observar las costuras. ¿Qué toma complementaria resulta pertinente?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto: 'Un acercamiento enfocado en las costuras.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Una toma más lejana del mismo conjunto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Una vista del espacio sin el bolso.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Una imagen que oculte la superficie del material.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Seleccionó una toma de detalle que responde a la información que falta.',
+          mensaje_incorrecto:
+            'El acercamiento debe permitir observar la característica consultada sin ocultarla ni desenfocarla.',
         },
         {
           id: 10,
           texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'Una empresa registra hechos y testimonios sobre la elaboración de una colección. ¿Qué enfoque fotográfico corresponde mejor?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Abstracto.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Documental.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Surrealista.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Gastronómico.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Relacionó el registro de hechos y procesos con la fotografía documental.',
+          mensaje_incorrecto:
+            'Revise la intención del registro: documentar un proceso requiere atender a hechos, participantes y contexto.',
         },
         {
           id: 11,
           texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+            'Antes de grabar un video, el equipo define guion, participantes y espacio. ¿En qué fase trabaja?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Producción.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Posproducción.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Publicación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Preproducción.',
               esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Identificó la preproducción como la fase de preparación anterior a la grabación.',
+          mensaje_incorrecto:
+            'Revise las fases: preparar guion y recursos corresponde a la preproducción.',
         },
         {
           id: 12,
           texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+            'Durante la grabación, un bolso cambia de posición entre tomas consecutivas de la misma acción. ¿Qué aspecto debe revisarse?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Licencia del programa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Nombre de exportación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Continuidad.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Número de publicaciones.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Reconoció la continuidad como la coherencia entre posiciones y acciones de las tomas.',
+          mensaje_incorrecto:
+            'Compare las tomas relacionadas para mantener coherencia en objetos, vestuario y acciones.',
+        },
+        {
+          id: 13,
+          texto:
+            'El equipo selecciona tomas, organiza la secuencia y ajusta el sonido. ¿En qué fase realiza estas tareas?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Preproducción.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'Verdadero',
+              texto: 'Posproducción.',
               esCorrecta: true,
             },
             {
-              id: 'b',
-              texto: 'Falso',
+              id: 'c',
+              texto: 'Selección de participantes.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Preparación del espacio.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Identificó tareas de edición y montaje propias de la posproducción.',
+          mensaje_incorrecto:
+            'La posproducción organiza y ajusta el material registrado para construir la versión final.',
         },
         {
           id: 14,
           texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+            'Un video incluye subtítulos automáticos. ¿Qué debe hacerse antes de publicarlo?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Publicarlos sin revisar porque son automáticos.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Eliminar las voces para evitar su comprobación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Reducir su tamaño hasta que resulten imperceptibles.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Comprobar texto, sincronización y sonidos relevantes.',
               esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto:
+            'Reconoció que los subtítulos requieren revisión para comunicar correctamente la información sonora.',
+          mensaje_incorrecto:
+            'Verifique palabras, tiempos e identificación de sonidos relevantes; la generación automática puede contener errores.',
         },
         {
           id: 15,
           texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+            'Una empresa necesita modificar el tamaño de un icono conservando sus contornos. ¿Qué representación es adecuada?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Gráfico vectorial.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Fotografía ampliada por encima de su detalle disponible.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Imagen borrosa de baja resolución.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Captura de pantalla del icono.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-      ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
-      mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
+          mensaje_correcto:
+            'Relacionó los trazados vectoriales con el cambio de tamaño de contornos definidos.',
+          mensaje_incorrecto:
+            'Los gráficos vectoriales representan formas mediante trazados; una captura rasterizada puede perder definición al ampliarse.',
         },
         {
-          id: 2,
+          id: 16,
           texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
+            '¿Qué criterio debe orientar la elección de una herramienta para preparar una pieza comunicacional?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Únicamente el número de efectos decorativos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Solo la popularidad de su nombre.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Las tareas, los formatos y los recursos disponibles.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'La apariencia del icono del programa.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Seleccionó criterios relacionados con el trabajo que debe realizarse y las condiciones de entrega.',
+          mensaje_incorrecto:
+            'Compare funciones, compatibilidad, acceso y exportación según el propósito de la pieza.',
         },
         {
-          id: 3,
+          id: 17,
           texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
+            'Una empresa entrega un catálogo PDF y necesita actualizarlo después. ¿Qué archivo debe conservar además?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Solo una captura de la portada.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Únicamente el mensaje que anuncia el catálogo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Una imagen reducida de una página.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El proyecto editable y sus recursos vinculados.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto:
+            'Reconoció la necesidad de conservar el proyecto para modificar textos, imágenes y composición.',
+          mensaje_incorrecto:
+            'El archivo de distribución no sustituye la conservación del proyecto y sus recursos de edición.',
         },
         {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
+          id: 18,
+          texto: '¿Cuál es la diferencia entre identidad e imagen de marca?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'La identidad expresa la propuesta; la imagen corresponde a la percepción del público.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'La identidad es el precio; la imagen es el inventario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Ambas describen exclusivamente el tamaño del logotipo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto:
+                'La imagen define las medidas; la identidad define las tallas.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Diferenció lo que la marca define y comunica de la percepción que construyen sus públicos.',
+          mensaje_incorrecto:
+            'Revise ambos conceptos: la identidad orienta la expresión de marca; la imagen se relaciona con su percepción.',
         },
         {
-          id: 5,
+          id: 19,
           texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
+            '¿Qué pregunta ayuda a definir la misión de una empresa de moda?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: '¿Cómo desea ser reconocida en el futuro?',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: '¿Qué formato de video usará esta semana?',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: '¿Cuál es su propósito actual y a quién sirve?',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: '¿Cuántos colores contiene una fotografía?',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Relacionó la misión con el propósito actual y el público al que sirve la empresa.',
+          mensaje_incorrecto:
+            'Distinga misión y visión: la misión explica el propósito actual; la visión plantea una aspiración futura.',
         },
         {
-          id: 6,
+          id: 20,
           texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
+            'Una plantilla obliga a estirar el logotipo para ocupar más espacio. ¿Qué decisión mantiene la identidad visual?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Estirar el logotipo hasta llenar el espacio.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Reorganizar la composición conservando las proporciones autorizadas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Cambiar sus letras sin consultar el manual.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Añadir efectos que modifiquen su forma.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto:
+            'Reconoció que debe adaptar la composición respetando las reglas de aplicación del identificador.',
+          mensaje_incorrecto:
+            'Revise el manual y utilice una versión autorizada sin deformar sus proporciones.',
         },
       ],
     },
