@@ -3,14 +3,14 @@
   &-1
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 55%
-    left: 0%
+    top: 38%
+    left: -3%
     width: 20%
   &-2
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
     top: 74%
-    right: 23%
+    right: 38%
     width: 20%
   &-3
     animation: float1 2.5s ease-in-out infinite alternate
@@ -113,7 +113,7 @@ figcaption, table caption
     .crd_hover_txt--body
       transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
       transform: translateY(0)
-      background-color: #E0E8FC
+      background-color: #C2D0F8
       // opacity: 0.8
       h4
         color: $color-sistema-texto
@@ -124,7 +124,7 @@ figcaption, table caption
     bottom: 0
     transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1)
     transform: translateY(calc( 100% - 3.85rem ))
-    background-color: #E0E8FC
+    background-color: #C2D0F8
     h4
       color: $color-sistema-texto
     &.bg-color-2
@@ -294,7 +294,7 @@ figcaption
     border-radius: 15px !important
 
 .bg-fondo-01
-  background-image: url("../assets/curso/tema1/img10.png") !important
+  background-image: url("../assets/curso/tema2/bg01.png") !important
   background-position: center
   background-size: 100% 100%
   border-radius: 30px !important
@@ -1035,7 +1035,7 @@ a, button, div
   position: relative
   z-index: 2
 .banner-text
-  background-color: #F1F6FF !important
+  background-color: #F4F5F6 !important
   border-radius: 10px
   padding: 50px
   margin-top: -60px
@@ -1043,6 +1043,8 @@ a, button, div
   padding: 20px
   border-radius: 8px; /* Opcional, para bordes redondeados */
 
+  &.bg-color-04
+    background-color: #E0E8FC !important
   @media screen and (max-width: $bp-max-sm)
     margin-top: -10px
 
@@ -1066,7 +1068,7 @@ a, button, div
 .titulo-con-imagen__fondo
   // dergadado lineal #C7D9F9 y #F0F5FD 180deg
   // background: linear-gradient(to right, #E7D7FF 0%, #F9F5FF 100%)
-  background-color: #EAE7F0
+  background-color: #D7D9DE
   border-radius: 18px
   padding: 10px 25px 10px 20px
   display: inline-flex
@@ -1100,13 +1102,13 @@ a, button, div
 .titulo-con-imagen__imagen
   position: absolute
   left: -8px
-  width: 85px
+  width: 65px
   @media screen and (max-width: $bp-max-md)
     width: 70px
 
 .titulo-con-imagen__texto
   margin: 0
-  padding-left: 70px
+  padding-left: 55px
   position: relative
   // &::before
   //   content: ""
@@ -1363,7 +1365,7 @@ a, button, div
 
 .slyder-f .slyder-f__btn
   background-color: #F4B400
-  color: $color-sistema-texto
+  color: #fff
 
 // .slyder-f .slyder-f__btn .fa-chevron-left, .slyder-f .slyder-f__btn .fa-chevron-right
 // .barra-avance__boton--regresar span
