@@ -208,7 +208,7 @@
     separador
     
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")
-      h2 2.3. Teoría del color y aplicaciones gráficas
+      h2 2.3 Teoría del color y aplicaciones gráficas
 
     .row.mb-lg-5.mb-4.justify-content-center.align-items-center
       .col-lg-4.col-md-8.mb-4.mb-lg-0.order-1.order-lg-1

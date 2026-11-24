@@ -165,7 +165,7 @@
     separador
     
     #t_1_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")
-      h2 1.3 Comunicación comercial en el Sistema Moda
+      h2 1.3 Comunicación comercial en el sistema moda
 
     .row.mb-lg-5.mb-4.justify-content-center.align-items-center
       .col-lg-4.col-md-10.mb-4.mb-lg-0.order-1.order-lg-2
