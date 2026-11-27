@@ -165,10 +165,8 @@
           p.mb-0 Para ampliar los conocimientos sobre la aplicación de la identidad visual, se invita a consultar el Manual de identidad visual corporativa de la Universidad de Valladolid (2025). Estos recursos presentan orientaciones y ejemplos para organizar los elementos gráficos y adaptar las piezas a diferentes medios, conservando el reconocimiento de la marca.
         .col-lg-auto.col-12.mt-3.mt-lg-0.text-center
           .d-flex.flex-column.align-items-center
-            a.boton.color-acento-botones.text-dark.mb-2(style="min-width: 140px", :href="'https://kitdigital.gob.cl/archivos/insumos/2025/Manual-Comunicacion-Visual-2025.pdf'" target="_blank")
-              span Ir al recurso 1
             a.boton.color-acento-botones.text-dark(style="min-width: 140px", :href="'https://imagencorporativa.uva.es/.documentos/manual-identidad-visual-corporativa.pdf'" target="_blank")
-              span Ir al recurso 2
+              span Ir al recurso
 
     .row.justify-content-center.mb-5
       .col-lg-10.mb-lg-0
