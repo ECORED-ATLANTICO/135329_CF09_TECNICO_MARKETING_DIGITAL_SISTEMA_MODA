@@ -25,11 +25,11 @@ export default {
       titulo_aprobado: '¡EXCELENTE!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       mensaje_aprobado:
-        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al sistema moda. Revise la retroalimentación para fortalecer su comprensión.',
+        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al Sistema Moda. Revise la retroalimentación para fortalecer su comprensión.',
       mensaje_reprobado:
         'Revise los temas asociados con sus respuestas incorrectas y vuelva a intentarlo. Puede repetir la actividad para fortalecer su comprensión de la comunicación gráfica.',
       mensaje_final_aprobado:
-        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al sistema moda. Revise la retroalimentación para fortalecer su comprensión.',
+        'Alcanzó al menos 14 respuestas correctas de 20. Reconoció conceptos sobre comunicación gráfica aplicada al Sistema Moda. Revise la retroalimentación para fortalecer su comprensión.',
       mensaje_final_reprobado:
         'Revise los temas asociados con sus respuestas incorrectas y vuelva a intentarlo. Puede repetir la actividad para fortalecer su comprensión de la comunicación gráfica.',
       preguntas: [

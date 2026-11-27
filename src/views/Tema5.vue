@@ -226,7 +226,7 @@
         :style="{'background-image': `url(${require_src('@/assets/curso/tema5/img14.png')})`}"
       )
       .bloque-texto-g__texto.p-4
-        p.mb-0  La elección del formato responde al contenido y al uso previsto. En la tabla continuación se describen los diferentes formatos, su uso habitual y el aspecto que debe revisarse de acuerdo al uso que se le quiera dar al mismo:
+        p.mb-0  La elección del formato responde al contenido y al uso previsto. En la tabla a continuación se describen los diferentes formatos, su uso habitual y el aspecto que debe revisarse de acuerdo al uso que se le quiera dar al mismo:
 
 
     .row.mb-5.justify-content-center.align-items-center
@@ -267,7 +267,7 @@
     .container
       .row.justify-content-center.align-items-center.mb-5.mb-lg-5
         .col-lg-12.bg-color-018.p-3.br-15
-          p.mb-0 La exportación puede modificar características del archivo de trabajo. Por ello, debe revisarse la versión final y conservarse el proyecto editable. La documentación de Adobe y los objetivos formativos de Certiport incluyen criterios de exportación y preparación de entregables (Adobe, 2024; Certiport, 2025)
+          p.mb-0 La exportación puede modificar características del archivo de trabajo. Por ello, debe revisarse la versión final y conservarse el proyecto editable. La documentación de Adobe y los objetivos formativos de Certiport incluyen criterios de exportación y preparación de entregables (Adobe, 2024; Certiport, 2025).
 
 
     .row.justify-content-center.mb-5
@@ -285,7 +285,7 @@
         .container
           .row.align-items-center.bg-color-09.mb-3.p-3.br-15
             .col-lg-12
-              p.mb-0 Existen alternativas libres, gratuitas y de pago. Algunas funciones o recursos incorporados pueden tener condiciones específicas de uso.
+              p.mb-0 Las herramientas de edición permiten transformar recursos en piezas comunicacionales organizadas. Reconocer sus funciones, conservar los proyectos y comprobar las exportaciones facilita actualizar contenidos y mantener su calidad.
         p.mb-0 Estas decisiones deben responder a criterios compartidos de identidad visual. Los fundamentos de marca permiten establecer esas orientaciones y aplicarlas de manera coherente en distintos medios.
 
 

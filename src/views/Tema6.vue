@@ -162,7 +162,7 @@
           img(src="@/assets/curso/tema3/img06.png", style="max-width: 90px", alt="").mx-auto
         .col-lg.col-md-12.col-sm-12.col-12.mb-3.mb-lg-0
           h4.mb-1 Lectura sugerida. Manual de comunicación visual del Gobierno de Chile / Manual de identidad visual corporativa de la Universidad de Valladolid
-          p.mb-0 Para ampliar los conocimientos sobre la aplicación de la identidad visual, se invita a consultar el Manual de comunicación visual del Gobierno de Chile (2025) y el Manual de identidad visual corporativa de la Universidad de Valladolid (2025). Estos recursos presentan orientaciones y ejemplos para organizar los elementos gráficos y adaptar las piezas a diferentes medios, conservando el reconocimiento de la marca.
+          p.mb-0 Para ampliar los conocimientos sobre la aplicación de la identidad visual, se invita a consultar el Manual de identidad visual corporativa de la Universidad de Valladolid (2025). Estos recursos presentan orientaciones y ejemplos para organizar los elementos gráficos y adaptar las piezas a diferentes medios, conservando el reconocimiento de la marca.
         .col-lg-auto.col-12.mt-3.mt-lg-0.text-center
           .d-flex.flex-column.align-items-center
             a.boton.color-acento-botones.text-dark.mb-2(style="min-width: 140px", :href="'https://kitdigital.gob.cl/archivos/insumos/2025/Manual-Comunicacion-Visual-2025.pdf'" target="_blank")
@@ -187,8 +187,6 @@
               figure
                 img(src="@/assets/curso/tema3/img16.png", data-aos="fade-right").w-md-75.mx-md-auto
             .col-lg-6.order-1.order-md-2.order-lg-2.p-4.p-lg-4
-              h4 ¿Sabías que?
-              p(data-aos="fade-left").mb-4 Lo invitamos a escuchar el siguiente Pódcast: 
               TarjetaAudio.color-acento-contenido.bg-color-white.mb-0(
                 texto="La identidad de marca en cada pieza"
                 tiempo

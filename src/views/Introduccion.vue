@@ -20,7 +20,7 @@
             .col-lg-12
               p.mb-0 La construcción de un mensaje requiere comprender a quién se dirige, qué se desea comunicar y dónde se publicará. El diseño, la fotografía y la producción audiovisual aportan herramientas para organizar esa información de manera clara y coherente.
           
-        p.mb-0(data-aos="fade-right") Este componente desarrolla los fundamentos para elaborar y adaptar piezas comunicacionales digitales. Su aplicación integra criterios de composición, accesibilidad e identidad de marca en situaciones propias del sistema moda.
+        p.mb-0(data-aos="fade-right") Este componente desarrolla los fundamentos para elaborar y adaptar piezas comunicacionales digitales. Su aplicación integra criterios de composición, accesibilidad e identidad de marca en situaciones propias del Sistema Moda.
 
 </template>
 

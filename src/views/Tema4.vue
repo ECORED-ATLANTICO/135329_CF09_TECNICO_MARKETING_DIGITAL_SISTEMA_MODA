@@ -14,7 +14,7 @@
         img(src="@/assets/curso/tema4/img01.png", alt="")
       .row.justify-content-center.align-items-center.z-2.mb-4
         .col-lg-10(data-aos="fade-right")
-          p.banner-text La producción audiovisual organiza imágenes en movimiento, sonidos y textos para comunicar una idea. En el sistema moda, permite presentar colecciones, mostrar el comportamiento de una prenda y explicar características o procesos que requieren una secuencia.
+          p.banner-text La producción audiovisual organiza imágenes en movimiento, sonidos y textos para comunicar una idea. En el Sistema Moda, permite presentar colecciones, mostrar el comportamiento de una prenda y explicar características o procesos que requieren una secuencia.
 
       .container
         .row.justify-content-center.align-items-center.mb-4
@@ -67,7 +67,7 @@
           .row.justify-content-between.align-items-center.p-3
             .col.mb-3.mb-sm-0
               h4.mb-1 Lectura sugerida. 130 años del cine
-              p.mb-0 Para ampliar los conocimientos los antecedentes del cine, se invita a consultar 130 años de cine, un recurso breve de RTVE sobre las primeras imágenes de los hermanos
+              p.mb-0 Para ampliar los conocimientos los antecedentes del cine, se invita a consultar 130 años de cine, un recurso breve de RTVE sobre las primeras imágenes de los hermanos Lumière.
             .col-sm-auto
               a.boton.color-acento-botones.text-dark(:href="'https://www.rtve.es/play/videos/telediario-fin-de-semana/130-anos-cine/16503013/'" target="_blank")
                 span Ir al recurso

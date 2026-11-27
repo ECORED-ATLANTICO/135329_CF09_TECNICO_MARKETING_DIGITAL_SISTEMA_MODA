@@ -315,8 +315,6 @@
               figure
                 img(src="@/assets/curso/tema3/img16.png", data-aos="fade-right").w-md-75.mx-md-auto
             .col-lg-6.order-2.order-md-2.order-lg-2.p-4.p-lg-4
-              h4 ¿Sabías que?
-              p(data-aos="fade-left").mb-4 Lo invitamos a escuchar el siguiente Pódcast: 
               TarjetaAudio.color-acento-contenido.bg-color-white.mb-0(
                 texto="Fotografías que informan: del producto a la imagen"
                 tiempo

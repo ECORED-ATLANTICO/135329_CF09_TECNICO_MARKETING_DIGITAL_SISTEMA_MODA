@@ -12,7 +12,7 @@
         img(src="@/assets/curso/tema2/img01.png", alt="")
       .row.justify-content-center.align-items-center.z-2.mb-4
         .col-lg-10(data-aos="fade-right")
-          p.banner-text El diseño gráfico organiza imágenes, textos y otros elementos para comunicar un mensaje. En el sistema moda, permite presentar productos, explicar sus características y construir piezas coherentes con la identidad de una marca. <br> Para tomar estas decisiones es necesario comprender la composición, la percepción visual, el color y la tipografía. Su aplicación ayuda a orientar la atención y facilitar la lectura en medios impresos y digitales.
+          p.banner-text El diseño gráfico organiza imágenes, textos y otros elementos para comunicar un mensaje. En el Sistema Moda, permite presentar productos, explicar sus características y construir piezas coherentes con la identidad de una marca. <br> Para tomar estas decisiones es necesario comprender la composición, la percepción visual, el color y la tipografía. Su aplicación ayuda a orientar la atención y facilitar la lectura en medios impresos y digitales.
 
       separador
       
@@ -173,7 +173,7 @@
                 td Alinear imágenes para orientar la lectura del catálogo.
               tr
                 td Cierre
-                td Se pueden reconocer figuras aunque sus contornos estén incompletos.
+                td Se pueden reconocer figuras, aunque sus contornos estén incompletos.
                 td Sugerir una silueta mediante trazos separados.
               tr
                 td Figura y fondo

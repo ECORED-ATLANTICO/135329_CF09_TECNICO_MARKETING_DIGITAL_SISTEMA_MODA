@@ -3,7 +3,7 @@
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    p.mb-3 El componente formativo Comunicación gráfica integra los fundamentos para construir mensajes visuales y comerciales en el sistema moda. La composición, la percepción, el color y la tipografía permiten organizar información y facilitar su lectura.
+    p.mb-3 El componente formativo Comunicación gráfica integra los fundamentos para construir mensajes visuales y comerciales en el Sistema Moda. La composición, la percepción, el color y la tipografía permiten organizar información y facilitar su lectura.
     p.mb-3 Sobre esta base, la fotografía y la producción audiovisual aportan recursos para presentar productos, explicar características y desarrollar relatos. Su elaboración articula planeación, captura, edición y revisión, considerando la fidelidad de la información y la accesibilidad.
     p.mb-5 Las herramientas digitales permiten adaptar y preparar estas piezas para distintos medios. Su aplicación, orientada por la identidad de marca, contribuye a mantener una comunicación coherente con la oferta y las necesidades del público.
 

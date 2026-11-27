@@ -165,7 +165,7 @@
     separador
     
     #t_1_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")
-      h2 1.3 Comunicación comercial en el sistema moda
+      h2 1.3 Comunicación comercial en el Sistema Moda
 
     .row.mb-lg-5.mb-4.justify-content-center.align-items-center
       .col-lg-4.col-md-10.mb-4.mb-lg-0.order-1.order-lg-2
@@ -193,7 +193,7 @@
           .tarjeta(titulo="Capaz de despertar interés")
             p.mb-0 Presenta el producto desde una perspectiva pertinente para el público. Mostrar cómo se transforma una prenda mediante distintas combinaciones puede resultar más útil que añadir efectos decorativos.
 
-    p.mb-4 Estas cualidades se relacionan con las expresiones shareable, searchable, snackable y surprising. Funcionan como orientaciones para revisar contenidos; su pertinencia depende del objetivo y del contexto de comunicación.
+    p.mb-4 Estas cualidades se relacionan con las expresiones <em>shareable</em>, <em>searchable</em>, <em>snackable</em> y <em>surprising</em>. Funcionan como orientaciones para revisar contenidos; su pertinencia depende del objetivo y del contexto de comunicación.
 
 
     .row.justify-content-center.mb-5

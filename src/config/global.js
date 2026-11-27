@@ -51,7 +51,7 @@ export default {
           },
           {
             numero: '1.3',
-            titulo: 'Comunicación comercial en el sistema moda',
+            titulo: 'Comunicación comercial en el Sistema Moda',
             hash: 't_1_3',
           },
         ],
@@ -351,11 +351,6 @@ export default {
     },
     {
       referencia:
-        'Gobierno de Chile. (2025, 11 de marzo). Manual de comunicación visual.',
-      link: 'https://kitdigital.gob.cl/archivos/insumos/2025/Manual-Comunicacion-Visual-2025.pdf',
-    },
-    {
-      referencia:
         'ILERNA. (2024, 28 de noviembre). Leyes de la Gestalt y su impacto en la percepción visual.',
       link: 'https://www.ilerna.es/blog/leyes-de-la-gestalt',
     },
@@ -421,6 +416,35 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
+          nombre: 'Rafael Neftalí Lizcano Reyes',
+          cargo: 'Asesor metodológico y pedagógico',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+        },
+        {
+          nombre: 'María Camila Álvarez Trujillo',
+          cargo: 'Contratista diseño curricular',
+          centro:
+            'Centro de Formación en Diseño, Confección y Moda - Regional Antioquia',
+        },
+        {
+          nombre: 'Liliana María Ceballos',
+          cargo: 'Contratista diseño curricular',
+          centro:
+            'Centro de Formación en Diseño, Confección y Moda - Regional Antioquia',
+        },
+        {
+          nombre: 'Cristian Metaute Medina',
+          cargo: 'Diseñador instruccional',
+          centro:
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+        },
+        {
+          nombre: 'Andrés Felipe Velandia Espitia',
+          cargo: 'Revisor metodológico y pedagógico',
+          centro: 'Regional Distrito Capital - Centro de Diseño y Metrología',
+        },
+        {
           nombre: 'María Fernanda Morales Angulo',
           cargo: 'Evaluadora instruccional',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
@@ -431,8 +455,8 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Carmen Alicia Martínez Torres',
-          cargo: 'Diseñadora de contenidos digitales',
+          nombre: 'Andrés Felipe Herrera Roldan',
+          cargo: 'Diseñador de contenidos digitales',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
@@ -466,13 +490,13 @@ export default {
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
-          nombre: 'Luis Gabriel Urueta',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
+          nombre: 'Laura Daniela Burgos Rueda',
+          cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
         {
-          nombre: 'Laura Daniela Burgos Rueda',
-          cargo: 'Validadora y vinculadora de recursos educativos digitales',
+          nombre: 'Luis Gabriel Urueta',
+          cargo: 'Validador y vinculador de recursos educativos digitales',
           centro: 'Centro de Comercio y Servicios - Regional Atlántico',
         },
       ],
